@@ -1,0 +1,129 @@
+body {
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container_do_container {
+  flex-basis: 388px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.imagem_mulher_principal img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.pagamento,
+.cancelamento,
+.instrucoes {
+  text-align: center;
+}
+
+.instrucoes h1 {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.instrucoes p {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  font-weight: 500;
+}
+
+.plano-information {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  margin: 4%;
+}
+
+.plano-information img {
+  width: 19%;
+  margin-top: 5%;
+}
+
+.anual-plan {
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+}
+.pagamento button {
+  background-color: #3829e0;
+  width: 71%;
+  padding: 5%;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+  box-shadow: 1px 9px 13px 9px hsl(245deg 100% 94%);
+  margin-top: 3%;
+}
+
+.cancelamento button {
+  background-color: white;
+  border: none;
+  margin: 6%;
+  color: hsl(224, 23%, 55%);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media (min-width: 375px) {
+  .container_do_container {
+    flex-basis: 317px;
+  }
+
+  .instrucoes {
+    margin: 4%;
+  }
+  .instrucoes p {
+    margin: 0;
+  }
+
+  .plano-information {
+    display: flex;
+    gap: 24px;
+  }
+
+  .plano-information img {
+    width: 19%;
+    margin-top: 5%;
+  }
+
+  .anual-plan {
+    font-size: 12px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 17px;
+    width: 100%;
+  }
+  .pagamento button {
+    width: 77%;
+    font-size: 21px;
+  }
+
+  .cancelamento button {
+    margin: 5%;
+    font-size: 21px;
+  }
+}
